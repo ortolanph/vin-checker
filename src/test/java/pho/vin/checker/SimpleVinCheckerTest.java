@@ -18,4 +18,10 @@ class SimpleVinCheckerTest {
         assertFalse(SimpleVinChecker.simpleCheck(vin));
     }
 
+    @Test
+    void shouldSimpleCheckVinRepeatedCharacters() {
+        String vin = "FFFFFFFFFFFFFFFFF";
+        assertTrue(SimpleVinChecker.simpleCheck(vin));
+    }
+
 }
